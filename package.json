@@ -1,6 +1,6 @@
 {
   "name": "@pigalle/registries.base",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A base class for registries usable by the Pigalle framework.",
   "main": "lib/registry-base.js",
   "scripts": {
@@ -55,9 +55,11 @@
     "require-dir": "^1.0.0",
     "should": "^13.2.1",
     "standard": "^11.0.0",
-    "github-uri-https-parser": "^0.1.1-alpha1"
+    "github-uri-https-parser": "^0.1.1-alpha1",
+    "@9fv.io/undefined-error": "*"
   },
   "dependencies": {
+    "@9fv.io/invalidtype-error": "^1.0.1",
     "@pigalle/core.base.class": "^0.3.1",
     "lodash": "^4.17.5"
   }

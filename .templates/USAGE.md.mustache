@@ -1,10 +1,17 @@
 ```javascript
 
+const {PigalleBaseClass} = require('@pigalle/core.base.class')
 const {RegistryBase} = require('@pigalle/registries.base')
 
+class MyTypeToStore extends PigalleBaseClass {}
+ 
 // A custom registry for the Pigalle framework.
 class CustomRegistry extends RegistryBase {
-
+ 
+  constructor (...args) {
+    super(MyTypeToStore...args)
+  }
+ 
 }
 
 ```
