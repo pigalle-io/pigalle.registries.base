@@ -11,30 +11,15 @@
 
 require('should')
 
-const {PigalleBaseClass} = require('@pigalle/core.base.class')
-const {UndefinedError} = require('@9fv.io/undefined-error')
+const {EntityBase} = require('@pigalle/entities.base')
 const {RegistryBase} = require('../lib/registry-base')
 
-class ValidType extends PigalleBaseClass {}
+class ValidType extends EntityBase {}
 class InvalidType {}
 
 describe('Class {RegistryBase}', () => {
   it('should be a function', () => {
     (RegistryBase).should.be.a.Function()
-  })
-})
-
-describe('Create a instance of {RegistryBase} using <new> keyword', () => {
-  it('and not passing argument as type should throw an {UndefinedError}', () => {
-    (() => new RegistryBase()).should.throw(Error) // @todo: check using {UndefinedError} is wrong...
-  })
-
-  it('and a valid derived {PigalleBaseClass} as type should be an object', () => {
-    (new RegistryBase(ValidType)).should.be.an.Object()
-  })
-
-  it('and a valid derived {PigalleBaseClass} as type should be an instance of {RegistryBase}', () => {
-    (new RegistryBase(ValidType)).should.be.an.instanceOf(RegistryBase)
   })
 })
 
