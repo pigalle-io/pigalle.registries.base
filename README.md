@@ -72,11 +72,18 @@ A base class for registries usable by the Pigalle framework.
 
 ```javascript
 
+const {PigalleBaseClass} = require('@pigalle/core.base.class')
 const {RegistryBase} = require('@pigalle/registries.base')
 
+class MyTypeToStore extends PigalleBaseClass {}
+ 
 // A custom registry for the Pigalle framework.
 class CustomRegistry extends RegistryBase {
-
+ 
+  constructor (...args) {
+    super(MyTypeToStore, ...args)
+  }
+ 
 }
 
 ```
@@ -139,7 +146,10 @@ Please refer to project's style guidelines and guidelines for submitting patches
 
 ## <a name="credits"> Credits
 
-* [pigalle.core.base.class](https://github.com/pigalle-io/pigalle.core.base.class) by [pigalle.io](https://github.com/pigalle-io/)
+### Thanks to the developers of the very useful dependencies...
+
+* [@pigalle/entities.base](https://github.com/pigalle-io/pigalle.entities.base) by [pigalle.io](https://github.com/pigalle-io/)
+* [@9fv.io/invalidtype-error](https://github.com/9fv/node-invalidtype-error) by [9fv.io](https://github.com/9fv/)
 
 ## <a name="history"> History
 
