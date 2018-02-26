@@ -1,6 +1,6 @@
 {
   "name": "@pigalle/registries.base",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A base class for registries usable by the Pigalle framework.",
   "main": "lib/registry-base.js",
   "scripts": {
@@ -60,6 +60,6 @@
   },
   "dependencies": {
     "@9fv.io/invalidtype-error": "^1.0.1",
-    "@pigalle/entities.base": "*"
+    "@pigalle/entities.base": "^0.1.3"
   }
 }
