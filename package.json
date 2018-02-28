@@ -1,6 +1,6 @@
 {
   "name": "@pigalle/registries.base",
-  "version": "0.2.3",
+  "version": "0.6.2",
   "description": "A base class for registries usable by the Pigalle framework.",
   "main": "lib/registry-base.js",
   "scripts": {
