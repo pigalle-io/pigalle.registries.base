@@ -150,6 +150,6 @@ Define a new item to registry.
 
 ***
 
-_Documentation generated on Mon, 26 Feb 2018 10:29:52 GMT_
+_Documentation generated on Wed, 28 Feb 2018 17:56:22 GMT_
 
 **Copyright &copy; 2018 [SAS 9 Février](https://9fevrier.com/)**
